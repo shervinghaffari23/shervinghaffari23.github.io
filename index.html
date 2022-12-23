@@ -11,7 +11,7 @@
 
         body{
             background:linear-gradient(120deg,#2980b9,#8e44ad);
-            height: 100vh;
+            height: 130vh;
             font-family: sans-serif;
         }
 
@@ -125,7 +125,7 @@
             <script>
                 Telegram.WebApp.ready();
                 keys = ['username','password']
-                values = {'username':'','passwprd':''}
+                values = {'username':'','password':''}
                 function send_data(){
                     keys.forEach(element => {
                         values[element] = document.getElementById(element).value;

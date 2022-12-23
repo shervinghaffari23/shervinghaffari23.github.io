@@ -96,7 +96,7 @@
 
     </style>
 
-    <body style="margin: 0px; padding: 0px; box-sizing: border-box;">
+    <body style="margin: 0px; padding: 0px; box-sizing: border-box;" id="body">
         
         <section class="container">
             <h1>Login</h1>
@@ -121,6 +121,10 @@
                 </section>    
 
             </form>
+
+            <script>
+                document.activeElement("body").addEventListener(blur())
+            </script>
 
             <script>
                 Telegram.WebApp.ready();

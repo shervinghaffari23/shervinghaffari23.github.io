@@ -104,14 +104,14 @@
             
                 
                 <div>
-                    <input type="text" id="username" value="" onblur="" required>
+                    <input type="text" id="username" value="" onblur="remove()" required>
                     <label class="username">Username</label>
                     <span style="width: 100%;height: 2px;background-color: rgb(2, 94, 155); z-index: 1;position: absolute;"></span>
                     
                 </div>
 
                 <div>
-                    <input type="password" id="password" value="" onblur="" required>
+                    <input type="password" id="password" value="" onblur="remove()" required>
                     <label class="password">Password</label>
                     <span style="width: 100%;height: 2px;background-color: rgb(2, 94, 155); z-index: 1;position: absolute;"></span>
                 </div>
@@ -123,7 +123,9 @@
             </form>
 
             <script>
-                document.activeElement("body").addEventListener(blur())
+                function remove(){
+                    document.activeElement.blur();
+                }
             </script>
 
             <script>

@@ -98,13 +98,13 @@
 
     <body style="margin: 0px; padding: 0px; box-sizing: border-box;" id="body">
         
-        <section class="container">
-            <h1 onclick="remove()">Login</h1>
+        <section class="container" onclick="remove()">
+            <h1>Login</h1>
             <form  method="get" class="Form">
             
                 
                 <div>
-                    <input type="text" id="username" value="" onblur="remove()"  required>
+                    <input type="text" id="username" value=""  required>
                     <label class="username">Username</label>
                     <span style="width: 100%;height: 2px;background-color: rgb(2, 94, 155); z-index: 1;position: absolute;"></span>
                     
@@ -124,11 +124,8 @@
 
             <script>
                 function remove(){
-                    // if(document.getElementById('username').value !="")
-                    // console.log("click")
-                        // document.getElementById('username').blur()
-                    document.activeElement.blur();
-                    // console.log(document.activeElement)
+                    if(document.activeElement !=document.getElementById("username"))
+                    document.getElementById("username").blur
                 }
             </script>
 

@@ -11,7 +11,7 @@
 
         body{
             background:linear-gradient(120deg,#2980b9,#8e44ad);
-            height: 120vh;
+            height: 100vh;
             font-family: sans-serif;
         }
 
@@ -104,14 +104,14 @@
             
                 
                 <div>
-                    <input type="text" id="username" value="" onblur="remove()" required>
+                    <input type="text" id="username" value="" onblur="remove()"  required>
                     <label class="username">Username</label>
                     <span style="width: 100%;height: 2px;background-color: rgb(2, 94, 155); z-index: 1;position: absolute;"></span>
                     
                 </div>
 
                 <div>
-                    <input type="password" id="password" value="" onblur="remove()" required>
+                    <input type="password" id="password" value=""  required>
                     <label class="password">Password</label>
                     <span style="width: 100%;height: 2px;background-color: rgb(2, 94, 155); z-index: 1;position: absolute;"></span>
                 </div>
@@ -124,7 +124,11 @@
 
             <script>
                 function remove(){
+                    // if(document.getElementById('username').value !="")
+                    // console.log("click")
+                        // document.getElementById('username').blur()
                     document.activeElement.blur();
+                    // console.log(document.activeElement)
                 }
             </script>
 

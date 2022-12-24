@@ -11,7 +11,7 @@
 
         body{
             background:linear-gradient(120deg,#2980b9,#8e44ad);
-            height: 100vh;
+            height: 105vh;
             font-family: sans-serif;
         }
 
@@ -96,9 +96,9 @@
 
     </style>
 
-    <body style="margin: 0px; padding: 0px; box-sizing: border-box;" id="body">
+    <body style="margin: 0px; padding: 0px; box-sizing: border-box;" id="body" onclick="hide_keyboard()">
         
-        <section class="container" onclick="remove()">
+        <section class="container">
             <h1>Login</h1>
             <form  method="get" class="Form">
             
@@ -123,9 +123,11 @@
             </form>
 
             <script>
-                function remove(){
-                    if(document.activeElement !=document.getElementById("username"))
+                function hide_keyboard(){
+                    if(document.activeElement !=document.getElementById("username")||
+                     document.activeElement !=document.getElementById("password"))
                     document.getElementById("username").blur
+                    document.getElementById("password").blur
                 }
             </script>
 

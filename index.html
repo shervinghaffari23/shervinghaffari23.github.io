@@ -10,7 +10,9 @@
     <style>
 
         body{
-            background:linear-gradient(120deg,#2980b9,#ad4444);
+            background-image: url("spaghetti-g5ef10c8eb_1920.jpg");
+            background-size:cover;
+            background-repeat: no-repeat;
             height: 100vh;
             font-family: sans-serif;
         }
@@ -21,7 +23,8 @@
             left: 50%;
             transform: translate(-50%,-50%);
             width: 350px;
-            background:bisque;
+            background:rgb(219, 180, 152);
+            opacity: 0.9;
             border-radius: 18px;
         }
         form{
@@ -82,7 +85,7 @@
             width: 100%;
             height: 35px;
             border-radius: 50px;
-            background:linear-gradient(120deg,#2980b9,#ad4444);
+            background-color: rgb(32, 105, 162);
             color: aliceblue;
             font-weight: 600;
             font-size: 20px;
@@ -98,9 +101,12 @@
 
     </style>
 
-    <body style="margin: 0px; padding: 0px; box-sizing: border-box;" id="body" onclick="">
+    <body style="margin: 0px; padding: 0px; box-sizing: border-box;" id="body" onclick="hide_keyboard()">
         
         <section class="container" id="container">
+            <div style="display: flex;justify-content: center;height: 200px;margin-bottom: -30px;">
+                <img style="width: 200px;height: auto;" src="imP6EkukcLQNniL-Food-Plate-Top-View-Non-Veg-PNG.png">
+            </div>
             <h1>Login</h1>
             <form  method="get" class="Form">
             
@@ -136,13 +142,15 @@
 
             <script>
                 function responsiveInput(){
-                    document.getElementById('container').style.transition='0.3s'
-                    document.getElementById('container').style.top = "35%"
+                    document.getElementById('container').style.transition='0.4s'
+                    document.getElementById('container').style.top = '41%'
+
                 }
 
                 function resetInput(){
-                    document.getElementById('container').style.transition='0.3s'
+                    document.getElementById('container').style.transition='0.4s'
                     document.getElementById('container').style.top = "50%"
+
                 }
             </script>
             

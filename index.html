@@ -100,20 +100,20 @@
 
     <body style="margin: 0px; padding: 0px; box-sizing: border-box;" id="body" onclick="">
         
-        <section class="container">
+        <section class="container" id="container">
             <h1>Login</h1>
             <form  method="get" class="Form">
             
                 
                 <div>
-                    <input type="text" id="username" value="" autocomplete="off" required>
+                    <input type="text" id="username" value="" autocomplete="off" onfocus="responsiveInput()" onblur="resetInput()" required>
                     <label class="username">Username</label>
                     <span style="width: 100%;height: 2px;background-color: rgb(2, 94, 155); z-index: 1;position: absolute;"></span>
                     
                 </div>
 
                 <div>
-                    <input type="password" id="password" value="" autocomplete="off" required>
+                    <input type="password" id="password" value="" autocomplete="off" onfocus="responsiveInput()" onblur="resetInput()" required>
                     <label class="password">Password</label>
                     <span style="width: 100%;height: 2px;background-color: rgb(2, 94, 155); z-index: 1;position: absolute;"></span>
                 </div>
@@ -134,6 +134,19 @@
                 }
             </script>
 
+            <script>
+                function responsiveInput(){
+                    document.getElementById('container').style.transition='0.5s'
+                    document.getElementById('container').style.top = "35%"
+                }
+
+                function resetInput(){
+                    document.getElementById('container').style.transition='0.5s'
+                    document.getElementById('container').style.top = "50%"
+                }
+            </script>
+            
+            
             <script>
                 Telegram.WebApp.ready();
                 keys = ['username','password']
